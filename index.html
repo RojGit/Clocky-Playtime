@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Clocky Playtime Factory</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    overflow: hidden;
+    font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+    user-select: none;
+  }
+  #game-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    outline: none;
+  }
+  #hud {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 10;
+  }
+</style>
+</head>
+<body>
+  <canvas id="game-canvas"></canvas>
+  <div id="hud"></div>
+  <script src="dist/renderer.bundle.js"></script>
+</body>
+</html>
